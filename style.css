@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap");
 :root {
   --bg: #2e3440;
   --fg: #d8dee9;
   --accent: #88c0d0;
-  --font: "Syne Mono", monospace;
+  --font: "Space Grotesk", sans-serif;
 }
 
 html {
