@@ -3,54 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>olivia’s portfolio</title>
+    <title>olivia wong</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="wrapper">
+    <section class="hero">
       <h1>olivia wong</h1>
       <p class="subtitle">web dev · keyboardist · design enjoyer</p>
 
-      <nav>
-        <a href="#projects">projects</a>
-        <a href="#about">about</a>
-        <a href="#contact">contact</a>
-      </nav>
+      <div class="contact-swatches">
+        <a
+          class="swatch"
+          style="--swatch-color: #81a1c1"
+          href="mailto:you@example.com"
+          >email</a
+        >
+        <a
+          class="swatch"
+          style="--swatch-color: #8fbcbb"
+          href="https://github.com/yourusername"
+          target="_blank"
+          >github</a
+        >
+        <a
+          class="swatch"
+          style="--swatch-color: #a3be8c"
+          href="https://www.linkedin.com/in/yourname"
+          target="_blank"
+          >linkedin</a
+        >
+      </div>
 
-      <section id="projects">
-        <h2>projects</h2>
-        <div class="project">
-          <h3>🌸 vibe tracker</h3>
-          <p>mood logging app with pastel gradients and too many feelings.</p>
-          <a href="https://github.com/yourusername/vibe-tracker">github</a>
-        </div>
-        <div class="project">
-          <h3>📼 static site zine</h3>
-          <p>
-            hand-coded html zine, tumblrcore meets brutalism. hosted on
-            tilde.club.
-          </p>
-          <a href="https://zine.example.com">read it</a>
-        </div>
-      </section>
+      <a class="scroll-link" href="#projects">projects ↓</a>
+    </section>
 
-      <section id="about">
-        <h2>about</h2>
-        <p>
-          i like making interactive things that feel soft and intentional.
-          working mostly with html/css/js and some rust on the side. sometimes i
-          play synth in weird bars.
-        </p>
-      </section>
-
-      <section id="contact">
-        <h2>contact</h2>
-        <p>
-          <a href="mailto:you@example.com">email me</a> or find me on
-          <a href="https://github.com/yourusername" target="_blank">github</a> ·
-          <a href="https://www.linkedin.com/in/yourname" target="_blank">linkedin</a></a>
-        </p>
-      </section>
-    </div>
+    <section id="projects" class="projects">
+      <div class="swatch" style="--swatch-color: #4c566a">
+        <h2>🌸 vibe tracker</h2>
+        <p>mood logging app with pastel gradients and too many feelings</p>
+        <a href="https://github.com/yourusername/vibe-tracker">github</a>
+      </div>
+      <div class="swatch" style="--swatch-color: #5e81ac">
+        <h2>📼 static site zine</h2>
+        <p>hand-coded html zine, tumblrcore meets brutalism</p>
+        <a href="https://zine.example.com">read it</a>
+      </div>
+    </section>
   </body>
 </html>
