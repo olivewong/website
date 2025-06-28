@@ -3,71 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>your name</title>
+  <title>olivia wong</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #0e0e0e;
+      --fg: #d4f8e8;
+       --accent: #91A3EE;
+      --glow: #9efeff;
+    }
+
     * {
       box-sizing: border-box;
     }
+
     html, body {
       margin: 0;
       padding: 0;
       scroll-behavior: smooth;
       font-family: 'Source Code Pro', monospace;
-      color: #111;
-      background-color: #fffdf8;
+      background: var(--bg);
+      color: var(--fg);
     }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--glow);
+      text-shadow: 0 0 4px var(--glow);
+    }
+
     section {
       width: 100%;
       min-height: 100vh;
+      padding: 3rem 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
       text-align: center;
     }
+
     .intro h1 {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 2.8rem;
+      font-size: 3rem;
       margin-bottom: 0.5rem;
     }
-    .intro p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
+
+    p {
       line-height: 1.6;
+      font-size: 1.1rem;
+      color: #BBC0CA;
+    }
+    .intro p {
       max-width: 600px;
+      margin-bottom: 2rem;
     }
+
+    .cursor::after {
+      content: '|';
+      animation: blink 2s infinite;
+      color: #91A3EE;
+    }
+
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+
     .nav a {
-      color: #444;
-      text-decoration: none;
-      margin: 0 0.5rem;
+      margin: 0 0.6rem;
+      font-weight: 500;
     }
-    .nav a:hover {
-      text-decoration: underline;
-    }
+
     .projects {
-      background-color: #f4f4f4;
+      background: #1a1a1a;
+      box-shadow: inset 0 0 20px rgba(127, 255, 212, 0.1);
+    }
+
+    .projects h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .projects p {
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
   <section class="intro">
-    <h1>your name</h1>
+    <h1>olivia wong<span class="cursor"></span></h1>
     <p>
-      i make things. usually with code. sometimes they’re cool.
+      i make things
     </p>
     <div class="nav">
-      <a href="mailto:you@email.com">email</a> /
-      <a href="https://github.com/yourusername" target="_blank">github</a> /
-      <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin</a> /
+      <a href="mailto:oliviaawongg@gmail.com">email</a> /
+      <a href="https://github.com/olivewong" target="_blank">github</a> /
+      <a href="https://linkedin.com/in/olivemwong" target="_blank">linkedin</a> /
       <a href="#projects">projects</a>
     </div>
   </section>
 
   <section class="projects" id="projects">
-    <h2 style="font-family: 'Space Grotesk', sans-serif;">projects</h2>
+    <h2>projects</h2>
     <p>coming soon.</p>
   </section>
 
